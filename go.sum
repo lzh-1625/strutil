@@ -1,5 +1,7 @@
 github.com/duke-git/lancet v1.4.3 h1:cWcaT1aBtEbYbYAxmQ8wP+B4K6X1NpMn6nyjD8giQA8=
 github.com/duke-git/lancet v1.4.3/go.mod h1:Grr6ehF0ig2nRIjeb+NmcxiJ12mkML4XQAx95tlQeJU=
+github.com/duke-git/lancet/v2 v2.3.2 h1:Cv+uNkx5yGqDSvGc5Vu9eiiZobsPIf0Ng7NGy5hEdow=
+github.com/duke-git/lancet/v2 v2.3.2/go.mod h1:zGa2R4xswg6EG9I6WnyubDbFO/+A/RROxIbXcwryTsc=
 github.com/yuin/goldmark v1.4.13/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5+Abc=

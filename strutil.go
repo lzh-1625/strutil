@@ -3,7 +3,7 @@ package strutil
 import (
 	"strings"
 
-	"github.com/duke-git/lancet/strutil"
+	"github.com/duke-git/lancet/v2/strutil"
 )
 
 type strchain struct {
@@ -42,6 +42,16 @@ func (s *strchain) After(char string) *strchain {
 	return s
 }
 
+func (s *strchain) Reverse() *strchain {
+	s.string = strutil.Reverse(s.string)
+	return s
+}
+
+func (s *strchain) ReplaceWithMap(replaces map[string]string) *strchain {
+	s.string = strutil.ReplaceWithMap(s.string, replaces)
+	return s
+}
+
 // 返回源字符串中指定字符串最后一次出现时的位置之后的子字符串。
 func (s *strchain) AfterLast(char string) *strchain {
 	s.string = strutil.AfterLast(s.string, char)
@@ -62,6 +72,18 @@ func (s *strchain) BeforeLast(char string) *strchain {
 
 func (s *strchain) Containers(char string) bool {
 	return strings.Contains(s.string, char)
+}
+
+func (s *strchain) ContainsAny(char string) bool {
+	return strings.ContainsAny(s.string, char)
+}
+
+func (s *strchain) ContainsRune(char rune) bool {
+	return strings.ContainsRune(s.string, char)
+}
+
+func (s *strchain) ContainsFunc(f func(rune) bool) bool {
+	return strings.ContainsFunc(s.string, f)
 }
 
 func (s *strchain) IsBlank() bool {
